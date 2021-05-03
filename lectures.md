@@ -38,4 +38,11 @@
 
 ## 76. Blocking Channels
 - Receiving message from a channel is a blocking thing/ blocking line of code;
-- 
+
+## 78. Repeating Routines
+- infinite loop:
+
+        for {
+
+        }
+
