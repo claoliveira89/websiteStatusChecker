@@ -35,3 +35,7 @@
 ## 74. Channels
 - Channels are used to communicate in between different running go routines;
 - Channels are typed (string. int, etc): the data/messages that we send through the channels must be of the same type corresponding to however we created the channel;
+
+## 76. Blocking Channels
+- Receiving message from a channel is a blocking thing/ blocking line of code;
+- 
