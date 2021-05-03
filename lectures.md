@@ -7,3 +7,27 @@
 
 - go: create a new thread go routine ...
 - checkLink(link): ... and run this function with it;
+
+## 73. Theory of Go Routines
+- Eventhough we are starting different go routines at the same time, only one is executing at each time!
+- 'go scheduler': monitors the code that is running inside of each 'go routine';
+- ''go scheduler': schedulers runs one routine until it finishes or makes a blocking call (such as an HTTP request);
+- One CPU core is only running the code of one go routine at the time;
+- If there's more than one CPU core, by default Go tries to use one core! But this is easily changed: scheduler runs one thread on each "logical" core.
+- Concurrency is not parallelism:
+    - concurrency: we can have multiple threads executing code. If one thread blocks, another one is picked up and worked on.
+    - parallelism: multiple threads executed at the exact same time. Requires multiple CPU's;
+
+> OUR RUNNING PROGRAM
+>
+>> Main routine
+> 
+>> Child go routine
+>
+>> Child go routine
+>
+>> Child go routine
+> -------------------------
+
+- Main routine created when we launched our program
+- Child routines created by the 'go' keyword
