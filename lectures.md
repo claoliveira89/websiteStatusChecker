@@ -46,3 +46,5 @@
 
         }
 
+## 81. Function Literals
+- Function literal: just like anonymous function in Javasript;
